@@ -12,7 +12,8 @@ Finally, the latitude and longitude values are plotted on the world map using [p
 
 ### Dependencies
 
-Make sure you have python and pip installed.
+- Make sure you have python and pip installed.
+- Create a [GeoNames](https://geonames.org) account and allow access for geocoding.
 
 ### Installing
 
@@ -25,6 +26,7 @@ pip install -r requirements.txt
 
 ### Executing program
 
+- Store your username in line 8 of `main.py`. For example, if your username is "myusername", line 8 should look like this: `YOUR_GEONAME_USERNAME = "myusername"`
 - Run the following in your IDE:
 ```
 python3 main.py

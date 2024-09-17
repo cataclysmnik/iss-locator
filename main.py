@@ -5,6 +5,8 @@ import plotly.graph_objects as go
 import plotly.io as pio
 from geopy.distance import geodesic
 
+YOUR_GEONAME_USERNAME = ""
+
 place = ''
 country = ''
 
@@ -48,7 +50,7 @@ print(f"Longitude: {longitude}")
 
 # Fetch the closest location to the current ISS coordinates
 try:
-    url = f'http://api.geonames.org/findNearbyPlaceNameJSON?lat={latitude}&lng={longitude}&username=sagniksingha'
+    url = f'http://api.geonames.org/findNearbyPlaceNameJSON?lat={latitude}&lng={longitude}&username={YOUR_GEONAME_USERNAME}'
     geo = requests.get(url)
     data2 = geo.json()
 
